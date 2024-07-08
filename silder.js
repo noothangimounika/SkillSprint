@@ -1,77 +1,28 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const slides = document.querySelectorAll('.silder-1');
-//     const prevButton = document.querySelector('.prev');
-//     const nextButton = document.querySelector('.next');
-//     let currentSlide = 0;
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-//     function showSlide(index) {
-//         if (index >= slides.length) {
-//             currentSlide = 0;
-//         } else if (index < 0) {
-//             currentSlide = slides.length - 1;
-//         } else {
-//             currentSlide = index;
-//         }
-//         const offset = -currentSlide * 100;
-//         document.querySelector('.slides').style.transform = translateX(${offset}%);
-//     }
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-//     prevButton.addEventListener('click', () => {
-//         showSlide(currentSlide - 1);
-//     });
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-//     nextButton.addEventListener('click', () => {
-//         showSlide(currentSlide + 1);
-//     });
-
-// //     showSlide(currentSlide); // Show the initial slide
-// // });
-
-
-
-// // let scrollContainer=document.querySelector(".slider");
-// // let backBtn=document.getElementById("backBtn");
-// // let nextBtn=document.getElementById("nextBtn");
-
-
-// // scrollContainer.addEventListener("wheel",(evt) => {
-// //     evt.defaultPrevented();
-// //     scrollContainer.scrollLeft +=evt.deltaY;
-// //     scrollContainer.computedStyleMap.scrollBehavior = "auti";
-// // });
-
-// // nextBtn.addEventListener("click", () =>{
-// //     scrollContainer.computedStyleMap.scrollBehavior = "smooth";
-// //     scrollContainer.scrollLeft +=900;
-// // });
-
-
-// // backBtn.addEventListener("click", () =>{
-// //     scrollContainer.computedStyleMap.scrollBehavior = "smooth";
-// //     scrollContainer.scrollLeft -=900;
-// // });
-
-
-
-// let scrollContainer=document.querySelector(".gallery");
-// let backBtn=document.getElementById("backBtn");
-// let nextBtn=document.getElementById("nextBtn");
-
-
-// scrollContainer.addEventListener("wheel",(evt) => {
-//     evt.defaultPrevented();
-//     scrollContainer.scrollLeft +=evt.deltaY;
-//     scrollContainer.computedStyleMap.scrollBehavior = "auti";
-// });
-
-// nextBtn.addEventListener("click", () =>{
-//     scrollContainer.computedStyleMap.scrollBehavior = "smooth";
-//     scrollContainer.scrollLeft +=900;
-// });
-
-
-// backBtn.addEventListener("click", () =>{
-//     scrollContainer.computedStyleMap.scrollBehavior = "smooth";
-//     scrollContainer.scrollLeft -=900;
-// });
-
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("slider");
+// //   let dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+// //   for (i = 0; i < dots.length; i++) {
+// //     dots[i].className = dots[i].className.replace(" active", "");
+// //   }
+//   slides[slideIndex-1].style.display = "block";
+// //   dots[slideIndex-1].className += " active";
+// }

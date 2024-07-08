@@ -1,0 +1,413 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: auto;
+    width: 100%;
+}
+.nav-bar{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 1420px;
+    background-color: rgb(224, 215, 215);
+    margin: 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: fixed;
+    top: 0;
+    
+}
+
+.nav-bar h1{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.nav-bar a {
+ text-decoration: none;
+ color: black;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+}
+.nav-bar ul li{
+    padding: 20px;
+    margin-top: -20px;
+    transition: all 0.5s ease;
+
+}
+.nav-bar ul :hover{
+    color: rgb(156, 151, 151);
+}
+.nav-bar button{
+    margin-right: 50px;
+    width: 90px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    border: transparent;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(150, 140, 235),rgb(99, 10, 84)) ;
+    color: white;
+    border-radius: 30px;
+}
+/* .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .main{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: rgb(182, 175, 175);
+  }
+  .image img{
+    height: 400px;
+    width: 400px;
+    margin-left: 200px;
+  }
+ .form{
+
+ }  */
+  
+ .main{
+    display: flex;
+   
+    margin-top: 150px;
+ }
+ .form .container {
+    width: 800px;
+    height: 700px;
+    box-shadow: 20px;
+    background-color: rgb(211, 209, 209);
+    border-radius: 20px;
+    margin: 30px;
+  }
+  .container form input{
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  #registrationForm{
+    margin-left: 100px;
+    padding-top: 50px;
+   
+  }
+ ::placeholder{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  #submit-btn{
+    background-color: rgb(45, 82, 185);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    color: white;
+    transition: all o.5s all;
+  }
+  #submit-btn:hover{
+    background-color: rgb(15, 55, 189);
+    border: 2px solid black;
+  }
+  #registrationForm h2{
+    font-size: 40px;
+  }
+  #registrationForm label{
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+  .image img{
+    width: 500px;
+    height: 500px;
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+  .img-text{
+    display: flex;
+    margin-top: 10px;
+    /* width: 500px;
+    height: 180px;
+    background-color: rgb(211, 209, 209) ; */
+    border-radius: 20px;
+  }
+  .img-text span{
+    font-size: 35px;
+    background: linear-gradient(to right,rgb(150, 140, 235),rgb(99, 10, 84)) ;
+    height: 40px;
+    border-radius: 5px;
+  }
+  .text1{
+    display: flex;
+    padding: 20px;
+    width: 270px;
+    height: 190px;
+    background-color: rgb(211, 209, 209) ;
+    border-radius: 10px;
+    
+  }
+  .text2{
+    display: flex;
+    padding: 20px;
+    width: 270px;
+    height: 190px;
+    background-color: rgb(211, 209, 209) ;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+  }
+  .text1 .h1-p{
+    margin-left: 20px;
+  }
+  .h1-p p{
+    font-size: 20px;
+  }
+  .text2 .h1-p1{
+    /* margin-left: 20px; */
+    padding-left: 20px;
+  }
+  .h1-p1 p{
+    font-size: 20px;
+  }
+
+
+
+
+
+
+
+  .footer-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    background-color: rgb(224, 218, 218);
+    border-radius: 20px;
+    height: 500px;
+    margin: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+   
+ }
+ .footer-text-icons h1{
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+ }
+ .footer-text-icons p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 20px;
+ }
+ .footer-icons ion-icon{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+ }
+ .footer-icons ion-icon:hover{
+    color: rgb(187, 160, 178);
+    font-size: 42px;
+ }
+ .footer-icons p{
+    font-size: 17px;
+ }
+ .footer-text1 {
+    padding-top: 200px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+ }
+ .footer-text1 a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.5s ease;
+ }
+ .footer-text1 ul li{
+    list-style: none;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+ }
+ .footer-text1  :hover{
+    color: rgb(96, 133, 177);
+ }
+
+
+
+ .footer-text-form{
+    height: 280px;
+    width: 550px;
+    background-color: white;
+    margin-right: 30px;
+    margin-top: 100px;
+    border-radius: 20px;
+ }
+ .footer-text-form h1{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 30px;
+ }
+ .footer-text-form p{
+    margin-bottom: 20px;
+    font-size: 17px;
+    margin-left: 70px;
+    font-weight: 500;
+
+ }
+ .input-form{
+    transition: all 0.5s ease;
+ }
+  .input-form input{
+   
+    height: 50px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+    
+ }
+
+ .input-form :placeholder-shown{
+    font-size: 20px;
+    transition: all 0.5s ease;
+
+ }
+ .input-form button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right,rgb(99, 10, 84),rgb(150, 140, 235)) ;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 10px;
+    margin-left: 50px;
+ }
+ .input-form button:hover{
+    background: linear-gradient(to right,rgb(150, 140, 235),rgb(99, 10, 84)) ;
+    border: 2px solid rgb(182, 108, 170);
+ }
+
+
+
+
+ .popup{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    height: 70px;
+    width: 1400px;
+    background-color: rgb(224, 215, 215);
+    margin: 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    position: fixed;
+    bottom:0;
+    
+ }
+ .popup .left{
+    display: flex;
+    margin-left: 20px;
+    transition: all o.5s ease;
+ }
+ .left p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: all o.5s ease;
+ }
+ .popup .left button{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    transition: all o.5s ease;
+ }
+ 
+ .left a{
+    color: black;
+    text-decoration: none;
+    transition: all o.5s ease;
+ }
+ .left a:hover{
+    color: blue;
+    text-decoration: underline;
+ }
+ .right{
+    margin-right: 20px;
+    margin-top: -10p;
+ }
+ .right button{
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    
+ }
+ .right .btn1{
+    background-color: rgb(58, 131, 199);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+ }
+ .right .btn2{
+    margin-left: 20px;
+ }

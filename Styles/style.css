@@ -316,6 +316,7 @@
 
  .slider{
     margin-bottom: 50px;
+    display: flex;
 }
 .slider .p{
     margin-top: 30px;
